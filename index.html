@@ -19,16 +19,16 @@
                     <img src="./img/logo.png" alt="logo" />
                     <i class="fas fa-bars hamburger"></i>
                     <ul>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#services">Servies</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="hero flex">
                     <div class="hero-text">
-                        <h1>I BUILD WEB INTERFACES !</h1>
-                        <h2>Ali Kumail</h2>
-                        <p>
+                        <h1 class="anim1">I BUILD WEB INTERFACES !</h1>
+                        <h2 class="anim1">Ali Kumail</h2>
+                        <p class="anim1">
                             I am self taught Frontend Web Developer , I had
                             learnt a lot of the processes, concepts and theories
                             of Frontend Development through online courses,
@@ -36,26 +36,27 @@
                             my spare time. I am also passionate about Machine
                             Learning and Deep Learning.
                         </p>
-                        <div class="social-icons">
-                            <a href="#" class="social-links"
-                                ><span
-                                    class="fab fa-facebook-f fa-lg circle"
-                                ></span
-                            ></a>
+                        <div class="social-icons anim1">
                             <a href="#" class="social-links"
                                 ><span
                                     class="fab fa-twitter fa-lg circle"
                                 ></span
                             ></a>
-                            <a href="#" class="social-links"
+                            <a
+                                href="https://www.linkedin.com/in/alykumail/"
+                                class="social-links"
                                 ><span
                                     class="fab fa-linkedin fa-lg circle"
                                 ></span
                             ></a>
-                            <a href="#" class="social-links"
+                            <a
+                                href="https://github.com/AlyKumail"
+                                class="social-links"
                                 ><span class="fab fa-github fa-lg circle"></span
                             ></a>
-                            <a href="#" class="social-links"
+                            <a
+                                href="https://dribbble.com/alikmail"
+                                class="social-links"
                                 ><span
                                     class="fab fa-dribbble fa-lg circle"
                                 ></span
@@ -307,11 +308,11 @@
             </div>
         </section>
 
-        <section class="services" id="#services">
+        <section class="services" id="services">
             <div class="container">
                 <h2>Services</h2>
                 <div class="service-wrap">
-                    <div class="service-card">
+                    <div class="service-card anim2">
                         <div class="image-wrap">
                             <img src="./img/UIUX.jpg" alt="" />
                         </div>
@@ -324,7 +325,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card anim2">
                         <div class="image-wrap">
                             <img src="./img/frontend.jpg" alt="" />
                         </div>
@@ -337,7 +338,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card anim2">
                         <div class="image-wrap">
                             <img src="./img/wordpress.jpg" alt="" />
                         </div>
@@ -359,7 +360,7 @@
                 <h2>Featured Projects</h2>
 
                 <div class="feature-project">
-                    <div class="left">
+                    <div class="left anim2">
                         <div class="wrap">
                             <div class="tags">
                                 <span class="pl-tag">HTML</span>
@@ -568,7 +569,7 @@
             </div>
         </section>
 
-        <section class="contact" id="#contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <h2>Contact</h2>
                 <p>
@@ -614,15 +615,14 @@
                 <p>Copyright &copy; 2021 - Ali Kumail</p>
                 <div class="social-icons">
                     <a href="#" class="social-links"
-                        ><span class="fab fa-facebook-f fa-2x circle"></span
-                    ></a>
-                    <a href="#" class="social-links"
                         ><span class="fab fa-twitter fa-2x circle"></span
                     ></a>
-                    <a href="#" class="social-links"
+                    <a
+                        href="https://www.linkedin.com/in/alykumail/"
+                        class="social-links"
                         ><span class="fab fa-linkedin fa-2x circle"></span
                     ></a>
-                    <a href="#" class="social-links"
+                    <a href="https://github.com/AlyKumail" class="social-links"
                         ><span class="fab fa-github fa-2x circle"></span
                     ></a>
                     <a href="#" class="social-links"
@@ -631,7 +631,15 @@
                 </div>
             </div>
         </footer>
-
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+        <script>
+            gsap.from(".anim1", {
+                opacity: 0,
+                duration: 1,
+                y: -50,
+                stagger: 0.4,
+            });
+        </script>
         <script src="script.js"></script>
     </body>
 </html>
