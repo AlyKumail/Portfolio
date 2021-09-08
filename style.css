@@ -72,6 +72,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    margin-bottom: 40px;
 }
 
 nav ul {
@@ -91,6 +92,33 @@ nav ul li a {
 nav ul li a:hover {
     border-bottom: 1px solid #333;
 }
+header {
+    z-index: -1;
+}
+header .container,
+.hero-text {
+    z-index: 2;
+}
+header .path,
+.rocket {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+}
+.path {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10%;
+    opacity: 0.65;
+}
+.rocket {
+    bottom: 0;
+    right: 0;
+}
+.hero-text p {
+    width: 77%;
+    margin: auto;
+}
 
 .hero-text,
 .hero-img {
@@ -98,6 +126,11 @@ nav ul li a:hover {
 }
 .hero-text {
     color: #1e378e;
+}
+.hero-text h1,
+.hero-text h2,
+.hero-text p {
+    text-align: center;
 }
 .hero-text p {
     color: #6379c8;
@@ -124,6 +157,10 @@ nav ul li a:hover {
     display: inline-block;
     /* margin-bottom: 20px; */
     margin-right: 20px;
+}
+header .social-icons {
+    text-align: center;
+    margin-top: 30px;
 }
 /* .social-icons{
     position: absolute;
@@ -206,9 +243,9 @@ nav ul li a:hover {
 .service-card img {
     width: 100%;
     height: 100%;
-    transform: scale(1);
+
     border-radius: 15px 15px 0 0;
-    filter: grayscale(30%);
+    /* filter: grayscale(30%); */
     transition: all 0.35s ease-in-out;
 }
 .service-card h3 {
@@ -543,6 +580,9 @@ footer .fab:hover {
     .contact p {
         text-align: center;
     }
+    .rocket {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -575,6 +615,10 @@ footer .fab:hover {
     }
     .contact form {
         width: 80%;
+    }
+    .hero-text p {
+        width: 100%;
+        margin: auto;
     }
 }
 
