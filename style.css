@@ -501,6 +501,32 @@ footer .social-links {
 footer .fab:hover {
     transform: scale(1);
 }
+
+.myEmail {
+    position: fixed;
+    bottom: 20%;
+    left: -6%;
+    transform: rotateZ(-90deg);
+    letter-spacing: 4px;
+    color: #6379c8fa;
+    /* position: relative; */
+}
+/* .myEmail::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 50px;
+    background-color: #333;
+    transform: rotateZ(90deg);
+    position: absolute;
+} */
+/* .line {
+    display: block;
+    width: 5px;
+    height: 50px;
+    background: #333;
+    transform: rotateZ(-90deg);
+} */
 @keyframes plant {
     from {
         -webkit-transform: translateY(0%);
@@ -614,10 +640,29 @@ footer .fab:hover {
     }
     .contact form {
         width: 80%;
+        color: #f4f4f44f;
     }
     .hero-text p {
         width: 100%;
         margin: auto;
+        text-align: justify;
+    }
+    .hero-text h1 {
+        margin: 10px auto 25px;
+        font-size: 4rem;
+        text-align: center;
+    }
+    footer .container {
+        flex-direction: column-reverse;
+    }
+    footer .social-icons {
+        margin: 15px 0;
+    }
+    .feature-project .btn {
+        margin: 10px;
+    }
+    .work .view-btns button {
+        padding: 8px 15px;
     }
 }
 
