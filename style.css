@@ -677,3 +677,12 @@ footer .fab:hover {
         padding: 20px 40px;
     }
 }
+
+.scroll-tracker{
+    position: fixed;
+    height: .5rem;
+    inset: 0 0 auto;
+    background-color: royalblue;
+    transform-origin: left;
+    z-index: 99;
+}
