@@ -669,6 +669,9 @@ footer .fab:hover {
     .work .view-btns button {
         padding: 8px 15px;
     }
+    .myEmail {
+        left: -21%;    
+    }
 }
 
 @media screen and (max-height: 500px) {
